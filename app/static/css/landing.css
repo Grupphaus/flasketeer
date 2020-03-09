@@ -1,0 +1,32 @@
+.index-container {
+    height: 100%;
+    display: grid;
+    padding: 1rem;
+    grid-template-areas: "featured featured featured aside"
+                         "featured featured featured aside"
+                         "featured featured featured accent"
+                         "footer footer footer accent";
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+}
+
+.featured {
+    grid-area: featured;
+    background-color: paleturquoise;
+}
+
+.aside {
+    grid-area: aside;
+    background-color: palegoldenrod;
+}
+
+.accent {
+    grid-area: accent;
+    background-color: paleturquoise;
+}
+
+.footer {
+    grid-area: footer;
+    background-color: palegreen;
+}

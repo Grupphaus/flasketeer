@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block html_head %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/portfolio.css') }}" />
+{% endblock %}
+
+{% block title %} {{ title }} {% endblock %}
+
+{% block main_container %}
+<div class="index-container">
+    <section class="featured"></section>
+    <section class="aside"></section>
+    <section class="accent"></section>
+    <section class="footer"></section>
+</div>
+{% endblock %}

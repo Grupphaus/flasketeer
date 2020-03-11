@@ -403,7 +403,7 @@
     transition: all 150ms cubic-bezier(.17,.67,.83,.67);
   }
 
-  .navigation-link:hover {
+  .navigation-link:hover, .navigation-link.active {
     border-bottom: .5rem solid palevioletred;
   } 
 

@@ -15,14 +15,14 @@
 <body>
     <header class="header__global">
         <section class="header__global-brand">
-            <div class="brand-logo"></div>
+            <a href="/"><div class="brand-logo"></div></a>
         </section>
         <section class="header__global-nav">
             <nav role="navigation">
-                <a class="navigation-link" href="#">About</a>
-                <a class="navigation-link" href="#">Portfolio</a>
-                <a class="navigation-link" href="#">Blog</a>
-                <a class="navigation-link" href="#">Contact</a>
+                <a class="navigation-link {% if request.path == '/about' %} active {% endif %}" href="/about">About</a>
+                <a class="navigation-link {% if request.path == '/portfolio' %} active {% endif %}" href="/portfolio">Portfolio</a>
+                <a class="navigation-link {% if request.path == '/blog' %} active {% endif %}" href="/blog">Blog</a>
+                <a class="navigation-link {% if request.path == '/contact' %} active {% endif %}" href="/contact">Contact</a>
             </nav>
         </section>
     </header>
